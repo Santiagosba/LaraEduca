@@ -4,7 +4,7 @@ namespace App\Livewire;
 
 use Livewire\Component;
 use App\Models\User; // Importar el modelo User
-use App\Models\Role; 
+use App\Models\Role;
 
 
 
@@ -20,12 +20,12 @@ class UserManagement extends Component
         $this->roles = Role::all();
     }
 
-    public function resetInputFields() 
-    { 
-        $this->name = ''; 
-        $this->email = ''; 
-        $this->user_id = ''; 
-    } 
+    public function resetInputFields()
+    {
+        $this->name = '';
+        $this->email = '';
+        $this->user_id = '';
+    }
 
     public function create()
     {

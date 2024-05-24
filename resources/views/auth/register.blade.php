@@ -1,5 +1,5 @@
 <x-guest-layout>
-    <div class="min-h-screen flex items-center justify-center bg-gray-100 py-12 px-4 sm:px-6 lg:px-8 bg-cover bg-center" style="background-image: url('{{ asset('images/Fondo.png') }}');">
+    <div class="min-h-screen flex items-center justify-center bg-gray-100 py-12 px-4 sm:px-6 lg:px-8 bg-cover bg-center" style="background-image: url('{{ asset('images/fondo.gif') }}');">
         <div class="max-w-md w-full space-y-8 p-10 rounded-lg shadow-lg" style="background-color: rgba(251, 200, 125, 0.7);">
             <div class="text-center">
                 <img class="mx-auto h-23 w-auto" src="{{ asset('images/LogoBTM.png') }}" alt="Logo aquí">

@@ -10,24 +10,25 @@
     <!-- Styles -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
 </head>
-<body class="font-sans antialiased bg-gray-100 min-h-screen flex flex-col justify-between bg-cover bg-center" style="background-image: url('{{ asset('images/Fondo.png') }}');">
+<body class="font-sans antialiased bg-hackerBg min-h-screen flex flex-col justify-between bg-cover bg-center" style="background-image: url('{{ asset('images/fondo.gif') }}');">
     <div class="flex-grow">
         <header class="grid grid-cols-2 items-center gap-2 py-10 lg:grid-cols-3">
             <div class="flex lg:justify-center lg:col-start-2">
-                <img src="{{ asset('images/LogoBTM.png') }}" class="h-28 w-auto lg:h-52" alt="Logo">
+                <img src="{{ asset('images/Logo LaraEduca.webp') }}" class="h-28 w-auto lg:h-52 rounded-2xl " alt="Logo">
             </div>
         </header>
+
 
         <div class="flex items-center justify-center flex-grow">
             @if (Route::has('login'))
                 <nav class="flex space-x-4">
                     @auth
-                        <a href="{{ url('/dashboard') }}" class="rounded-md px-4 py-2 text-white bg-blue-500 transition hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500">Dashboard</a>
+                        <a href="{{ url('/dashboard') }}" class="rounded-md px-4 py-2 text-white bg-hackerViolet transition hover:bg-hackerPurple focus:outline-none focus:ring-2 focus:ring-hackerViolet">Dashboard</a>
                     @else
-                        <a href="{{ route('login') }}" class="rounded-md px-4 py-2 text-white bg-blue-500 transition hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500">Log in</a>
+                        <a href="{{ route('login') }}" class="rounded-md px-4 py-2 text-white bg-hackerViolet transition hover:bg-hackerPurple focus:outline-none focus:ring-2 focus:ring-hackerViolet">Log in</a>
 
                         @if (Route::has('register'))
-                            <a href="{{ route('register') }}" class="rounded-md px-4 py-2 text-white bg-green-500 transition hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500">Register</a>
+                            <a href="{{ route('register') }}" class="rounded-md px-4 py-2 text-white bg-hackerBlue transition hover:bg-hackerPurple focus:outline-none focus:ring-2 focus:ring-hackerBlue">Register</a>
                         @endif
                     @endauth
                 </nav>
@@ -35,8 +36,8 @@
         </div>
     </div>
 
-    <footer class="py-6 text-center text-sm text-black bg-gray-200">
-        <p>Brian Miranda</p>
+    <footer class="py-6 text-center text-sm text-white bg-hackerBg border-t border-hackerViolet">
+        <p>Santiago Samuel Benítez Álvarez</p>
     </footer>
 </body>
 </html>
